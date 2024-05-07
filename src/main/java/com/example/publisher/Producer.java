@@ -15,6 +15,7 @@ public class Producer {
     // this object provides logs to identify bug
     private static final Logger LOGGER= LoggerFactory.getLogger(Producer.class);
 
+    // This object is required to send message to the Exchange with the routing key
     private RabbitTemplate rabbitTemplate;
 
     public Producer(RabbitTemplate rabbitTemplate) {
