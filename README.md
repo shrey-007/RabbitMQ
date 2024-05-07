@@ -19,33 +19,33 @@
 
 # Difference between AMQP(Advance Message Queuing Protocol) and WebSocket
 
-1) Function:
-AMQP (Advanced Message Queuing Protocol):  An application-layer protocol for reliable message exchange. It acts as a message broker, allowing applications to send and receive messages asynchronously, ensuring messages are delivered even if the recipient is unavailable temporarily.
+1) Function:  
+AMQP (Advanced Message Queuing Protocol):  An application-layer protocol for reliable message exchange. It acts as a message broker, allowing applications to send and receive messages asynchronously, ensuring messages are delivered even if the recipient is unavailable temporarily.  
 WebSocket: A network protocol that provides bi-directional, full-duplex communication channels between a client and a server. It enables real-time data exchange between applications, ideal for building interactive web applications.
-2) Communication Model:
-AMQP: Follows a message-oriented communication model where messages are sent to and received from queues. It supports both one-to-one and one-to-many communication patterns.
+2) Communication Model:  
+AMQP: Follows a message-oriented communication model where messages are sent to and received from queues. It supports both one-to-one and one-to-many communication patterns.  
 WebSocket: Facilitates full-duplex communication between a client and a server over a single TCP connection. It enables real-time, bidirectional communication between a web client and a server.
-3) Use Cases:
-AMQP:
-Microservices communication: Enables communication between different parts of a complex application.
-Scalable messaging: Supports high message volumes and multiple clients.
-Guaranteed delivery: Ensures messages are delivered even if the recipient is temporarily unavailable.
-Offline messaging: Messages can be queued and delivered later when the recipient comes online.
-WebSocket:
-Real-time applications: Provides low-latency, two-way communication for applications like chat, online gaming, and live dashboards.
+3) Use Cases:  
+AMQP:  
+Microservices communication: Enables communication between different parts of a complex application.  
+Scalable messaging: Supports high message volumes and multiple clients.  
+Guaranteed delivery: Ensures messages are delivered even if the recipient is temporarily unavailable.  
+Offline messaging: Messages can be queued and delivered later when the recipient comes online.    
+WebSocket:  
+Real-time applications: Provides low-latency, two-way communication for applications like chat, online gaming, and live dashboards.  
 Streaming data: Enables continuous data flow between applications, useful for live stock quotes or sensor data.
-4) Choosing Between Them:
+4) Choosing Between Them:  
 AMQP: Choose AMQP for reliable, asynchronous message exchange between applications that don't require real-time communication. It's a good fit for complex architectures with high message volumes.
 WebSocket: Choose WebSocket for building real-time web applications that require low-latency, bi-directional data flow. It excels in scenarios where instant updates and interaction are crucial.
-5) Uses:
-   AMQP:
-   i) Enterprise messaging systems where reliability, scalability, and asynchronous communication are critical.
-   ii) Microservices architecture where decoupling of services is important.
-   iii) IoT (Internet of Things) applications for handling large volumes of data streams.
-   WebSocket:
-   i) Real-time web applications such as chat applications, stock tickers, and live sports updates.
-   ii) Collaborative editing tools where multiple users need to work on the same document simultaneously.
-   iii) Online gaming platforms for real-time player interactions.
+5) Uses:  
+   AMQP:  
+   i) Enterprise messaging systems where reliability, scalability, and asynchronous communication are critical.  
+   ii) Microservices architecture where decoupling of services is important.  
+   iii) IoT (Internet of Things) applications for handling large volumes of data streams.  
+   WebSocket:  
+   i) Real-time web applications such as chat applications, stock tickers, and live sports updates.  
+   ii) Collaborative editing tools where multiple users need to work on the same document simultaneously.  
+   iii) Online gaming platforms for real-time player interactions.  
 
 
 
