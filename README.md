@@ -18,7 +18,7 @@
 4)  If the message id of type Json then rabbitTemplate will use converter to convert it into Java object then sends it to the respective queue using routing key.
 
 # Difference between AMQP(Advance Message Queuing Protocol) and WebSocket
-0) Websocket is Client Server while AMQP is Producer Consumer, there is no Queue in Websocket.
+0) Websocket is Client Server while AMQP is Producer Consumer, there is no Queue in Websocket.In Websocket, client will only receive the message if it is online, but in AMQP if the consumer is offline still the message is in the queue , so when it comes online ,the message will be delivered
 1) Function:  
 AMQP (Advanced Message Queuing Protocol):  An application-layer protocol for reliable message exchange. It acts as a message broker, allowing applications to send and receive messages asynchronously, ensuring messages are delivered even if the recipient is unavailable temporarily.  
 WebSocket: A network protocol that provides bi-directional, full-duplex communication channels between a client and a server. It enables real-time data exchange between applications, ideal for building interactive web applications.
